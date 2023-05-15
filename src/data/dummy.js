@@ -474,25 +474,25 @@ export const links = [
     title: 'Dashboard',
     links: [
       {
-        name: 'ecommerce',
+        name: 'e-commerce',
         icon: <FiShoppingBag />,
       },
     ],
   },
 
   {
-    title: 'Pages',
+    title: 'Pagine',
     links: [
       {
-        name: 'orders',
+        name: 'ordini',
         icon: <AiOutlineShoppingCart />,
       },
       {
-        name: 'employees',
+        name: 'impiegati',
         icon: <IoMdContacts />,
       },
       {
-        name: 'customers',
+        name: 'clienti',
         icon: <RiContactsLine />,
       },
     ],
@@ -501,7 +501,7 @@ export const links = [
     title: 'Apps',
     links: [
       {
-        name: 'calendar',
+        name: 'calendario',
         icon: <AiOutlineCalendar />,
       },
       {
@@ -513,16 +513,16 @@ export const links = [
         icon: <FiEdit />,
       },
       {
-        name: 'color-picker',
+        name: 'colore-scelta',
         icon: <BiColorFill />,
       },
     ],
   },
   {
-    title: 'Charts',
+    title: 'Tabelle',
     links: [
       {
-        name: 'line',
+        name: 'linea',
         icon: <AiOutlineStock />,
       },
       {
@@ -539,15 +539,15 @@ export const links = [
         icon: <FiPieChart />,
       },
       {
-        name: 'financial',
+        name: 'finanza',
         icon: <RiStockLine />,
       },
       {
-        name: 'color-mapping',
+        name: 'mappa-colori',
         icon: <BsBarChart />,
       },
       {
-        name: 'pyramid',
+        name: 'piramide',
         icon: <GiLouvrePyramid />,
       },
       {
