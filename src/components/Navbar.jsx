@@ -5,7 +5,7 @@ import { BsChatLeft } from 'react-icons/bs';
 import { RiNotification3Line } from 'react-icons/ri';
 import { MdKeyboardArrowDown } from 'react-icons/md';
 import { TooltipComponent } from '@syncfusion/ej2-react-popups';
-import avatar from '../data/avatar.jpg';
+import avatar from '../data/avatar.png';
 import { Cart, Chat, Notification, UserProfile } from '.';
 import { userStateContext } from '../context/ContextProvider';
 
@@ -16,15 +16,34 @@ const NavButton = ({ title, customFunc, icon, color, dotColor }) => (
     className='relative text-xl rounded-full p-3 hover:bg-light-gray'
     >
       <span style={{ background: dotColor }}
-      className='absolute inline-flex rounded-full h-2 w-2 right-2 top-2'
-      >
-        {icon}
+      className='absolute inline-flex rounded-full h-2 w-2 right-2 top-2'>       
       </span>
+      {/* ICONS NAVBAR */}
+        {icon}   
     </button>
   </TooltipComponent>
 )
 const Navbar = () => {
-  const { activeMenu, setActiveMenu } = userStateContext();
+  const { activeMenu, setActiveMenu, isClicked, setIsClicked, handleClick, screenSize, setScreenSize } = userStateContext();
+
+  useEffect(() => {
+      const handleResize = () => setScreenSize(window.innerWidth);
+
+      window.addEventListener('resize', handleResize);
+
+      handleResize();
+      // IN REACT addEventListener WE HAVE TO REMOVE IT
+      return () => window.removeEventListener('resize', handleResize);
+  },[]);
+  
+  // Hide Menu
+  useEffect(() => {
+    if(screenSize <=900) {
+      setActiveMenu(false);
+    } else {
+      setActiveMenu(true);
+    }
+  },[screenSize]);
 
   return (
    <div className='flex justify-between p-2 md:mx-6 relative'>
@@ -52,8 +71,12 @@ const Navbar = () => {
              />
           </div>
 
-
         </TooltipComponent>
+
+        {isClicked.cart && <Cart />}
+        {isClicked.chat && <Chat />}
+        {isClicked.notification && <Notification />}
+        {isClicked.userprofile && <UserProfile />}
 
       </div>
    </div>
