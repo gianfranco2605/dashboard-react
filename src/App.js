@@ -39,8 +39,6 @@ const App = () => {
             >
               <Navbar />
             </div>
-          </div>
-
           <div>
             <Routes>
 
@@ -71,8 +69,9 @@ const App = () => {
             </Routes>
           </div>
         </div>
-      </BrowserRouter>
-    </div>
+      </div>  
+    </BrowserRouter>
+  </div>
   )
 };
 
