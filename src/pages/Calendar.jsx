@@ -1,6 +1,6 @@
 import React from 'react';
-import { ScheduleComponent, ViewDirective, ViewsDirective, Day, Week, WorkWeek, Month, Agenda, Inject, Resize, DragAndDrop } from '@syncfusion/ej2-react-schedule';
-import { DatePickerComponent } from '@syncfusion/ej2-react-calendars';
+import { ScheduleComponent, Day, Week, WorkWeek, Month, Agenda, Inject, Resize, DragAndDrop } from '@syncfusion/ej2-react-schedule';
+
 
 import { scheduleData } from '../data/dummy';
 
@@ -13,6 +13,7 @@ const Calendar = () => {
       <ScheduleComponent
           height='650px'
           eventSettings={{ dataSource: scheduleData}}
+          e
       >
         <Inject services={[Day, Week, WorkWeek, Month, Agenda, Resize, DragAndDrop]} />
       </ScheduleComponent>
