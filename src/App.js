@@ -11,7 +11,7 @@ import './App.css'
 
 const App = () => {
 
-  const { activeMenu } = userStateContext();
+  const { activeMenu, themeSettings, setThemeSettings } = userStateContext();
 
   
   return (
@@ -21,7 +21,7 @@ const App = () => {
           <div className='fixed right-4 bottom-4' style={{ zindex: '1000'}}>
             {/* Setting button */}
             <TooltipComponent content="Settings" position='Top'>
-              <button type='button' className='text-3xl p-3 hover:drop-shadow-xl hover:bg-light-gray text-white' style={{ background: 'blue', borderRadius: '50%' }}>
+              <button type='button' className='text-3xl p-3 hover:drop-shadow-xl hover:bg-light-gray text-white' onClick={() => setThemeSettings(true)} style={{ background: 'blue', borderRadius: '50%' }}>
               <FiSettings />
               </button>
             </TooltipComponent>
@@ -40,6 +40,8 @@ const App = () => {
               <Navbar />
             </div>
           <div>
+
+            {themeSettings && <ThemeSettings />}
             <Routes>
 
               {/* Dasboard */}
