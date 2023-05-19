@@ -15,8 +15,8 @@ const Ecommerce = () => {
         <div className='bg-white dark:bg-secondary-dark-bg h-44 rounded-xl w-full lg:w-80 p-8 pt-9 m-3 bg-hero-pattern bg-no-repeat bg-cover bg-center'>
           <div className='flex justify-between items-center'>
             <div>
-              <p className='font-bold text-grau-400'>Guadagni</p>
-              <p className='text-2xl'>€69,448.64</p>
+              <p className='font-bold text-gray-400'>Guadagni</p>
+              <p className='text-2xl dark:text-gray-200'>€69,448.64</p>
             </div>
 
           </div>
