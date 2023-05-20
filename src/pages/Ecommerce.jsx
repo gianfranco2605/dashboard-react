@@ -8,7 +8,7 @@ import { userStateContext } from '../context/ContextProvider';
 
 const Ecommerce = () => {
   const { currentColor } = userStateContext();
-  console.log(currentColor);
+ 
   return (
     <div className='mt-12'>
       <div className='flex flex-wrap lg:flex-nowrap justify-center'>

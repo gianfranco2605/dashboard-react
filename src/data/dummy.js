@@ -81,42 +81,32 @@ const gridEmployeeCountry = (props) => (
 export const EditorData = () => (
   <div>
     <h3>
-      Try React
-      React has been designed from the start for gradual adoption, and you can use as little or as much React as you need. Whether you want to get a taste of React, add some interactivity to a simple HTML page, or start a complex React-powered app, the links in this section will help you get started.
+    Prova React
+React è stato progettato fin dall'inizio per un'adozione graduale e puoi utilizzare React tanto o quanto ne hai bisogno. Che tu voglia assaggiare React, aggiungere un po' di interattività a una semplice pagina HTML o avviare un'app complessa basata su React, i link in questa sezione ti aiuteranno a iniziare.
 
-      Online Playgrounds
-      If you’re interested in playing around with React, you can use an online code playground. Try a Hello World template on CodePen, CodeSandbox, or Stackblitz.
+Playground online
+Se sei interessato a giocare con React, puoi utilizzare un playground online di codice. Prova un template Hello World su CodePen, CodeSandbox o Stackblitz. Se preferisci utilizzare il tuo editor di testo, puoi anche scaricare questo file HTML, modificarlo e aprirlo dal filesystem locale nel tuo browser. Effettua una lenta trasformazione del codice in esecuzione, quindi consigliamo di utilizzarlo solo per semplici dimostrazioni.
 
-      If you prefer to use your own text editor, you can also download this HTML file, edit it, and open it from the local filesystem in your browser. It does a slow runtime code transformation, so we’d only recommend using this for simple demos.
+Aggiungi React a un sito web
+Puoi aggiungere React a una pagina HTML in un minuto. Successivamente, puoi espandere gradualmente la sua presenza o mantenerla limitata a alcuni widget dinamici.
 
-      Add React to a Website
-      You can add React to an HTML page in one minute. You can then either gradually expand its presence, or keep it contained to a few dynamic widgets.
+Crea una nuova app React
+Quando si avvia un progetto React, una semplice pagina HTML con tag script potrebbe essere ancora la migliore opzione. Ci vogliono solo un minuto per configurarlo! Man mano che la tua applicazione cresce, potresti voler considerare una configurazione più integrata. Ci sono diverse toolchain JavaScript che consigliamo per applicazioni più grandi. Ciascuna di esse può funzionare con poca o nessuna configurazione e ti consente di sfruttare appieno il ricco ecosistema di React. Scopri come.
 
-      Create a New React App
-      When starting a React project, a simple HTML page with script tags might still be the best option. It only takes a minute to set up!
+Impara React
+Le persone si avvicinano a React da diverse esperienze e con diversi stili di apprendimento. Che tu preferisca un approccio più teorico o pratico, speriamo che troverai utile questa sezione. Se preferisci imparare facendo, inizia con il nostro tutorial pratico. Se preferisci imparare concetti passo dopo passo, inizia con la nostra guida ai concetti principali. Come qualsiasi tecnologia sconosciuta, React ha una curva di apprendimento. Con la pratica e un po' di pazienza, ci prenderai la mano.
 
-      As your application grows, you might want to consider a more integrated setup. There are several JavaScript toolchains we recommend for larger applications. Each of them can work with little to no configuration and lets you take full advantage of the rich React ecosystem. Learn how.
+Primi esempi
+La homepage di React contiene alcuni piccoli esempi di React con un editor live. Anche se non conosci ancora nulla su React, prova a modificare il loro codice e osserva come influisce sul risultato.
 
-      Learn React
-      People come to React from different backgrounds and with different learning styles. Whether you prefer a more theoretical or a practical approach, we hope you’ll find this section helpful.
+React per principianti
+Se ritieni che la documentazione di React proceda a un ritmo più veloce di quanto ti senti a tuo agio, dai un'occhiata a questa panoramica di React di Tania Rascia. Introduce i concetti più importanti di React in modo dettagliato e adatto ai principianti. Una volta terminato, riprova a consultare la documentazione!
 
-      If you prefer to learn by doing, start with our practical tutorial.
-      If you prefer to learn concepts step by step, start with our guide to main concepts.
-      Like any unfamiliar technology, React does have a learning curve. With practice and some patience, you will get the hang of it.
+React per designer
+Se provieni da un background di design, queste risorse sono un ottimo punto di partenza.
 
-      First Examples
-      The React homepage contains a few small React examples with a live editor. Even if you don’t know anything about React yet, try changing their code and see how it affects the result.
-
-      React for Beginners
-      If you feel that the React documentation goes at a faster pace than you’re comfortable with, check out this overview of React by Tania Rascia. It introduces the most important React concepts in a detailed, beginner-friendly way. Once you’re done, give the documentation another try!
-
-      React for Designers
-      If you’re coming from a design background, these resources are a great place to get started.
-
-      JavaScript Resources
-      The React documentation assumes some familiarity with programming in the JavaScript language. You don’t have to be an expert, but it’s harder to learn both React and JavaScript at the same time.
-
-      We recommend going through this JavaScript overview to check your knowledge level. It will take you between 30 minutes and an hour but you will feel more confident learning React.
+Risorse JavaScript
+La documentazione di React presuppone una certa familiarità con la programmazione nel linguaggio JavaScript. Non è necessario essere un esperto, ma imparare contemporaneamente React e JavaScript può essere più difficile. Ti consigliamo di consultare questa panoramica di JavaScript
     </h3>
   </div>
 );
@@ -393,23 +383,23 @@ export const LinePrimaryYAxis = {
 
 export const customersGrid = [
   { type: 'checkbox', width: '50' },
-  { headerText: 'Name',
+  { headerText: 'Nome',
     width: '150',
     template: customerGridImage,
     textAlign: 'Center' },
   { field: 'ProjectName',
-    headerText: 'Project Name',
+    headerText: 'Nome Progetto',
     width: '150',
     textAlign: 'Center' },
   { field: 'Status',
-    headerText: 'Status',
+    headerText: 'Stato',
     width: '130',
     format: 'yMd',
     textAlign: 'Center',
     template: customerGridStatus },
   {
     field: 'Weeks',
-    headerText: 'Weeks',
+    headerText: 'Settimane',
     width: '100',
     format: 'C2',
     textAlign: 'Center' },
@@ -420,12 +410,12 @@ export const customersGrid = [
     textAlign: 'Center' },
 
   { field: 'Location',
-    headerText: 'Location',
+    headerText: 'Locazione',
     width: '150',
     textAlign: 'Center' },
 
   { field: 'CustomerID',
-    headerText: 'Customer ID',
+    headerText: 'ID Clienti',
     width: '120',
     textAlign: 'Center',
     isPrimaryKey: true,
@@ -534,26 +524,8 @@ export const links = [
         name: 'bar',
         icon: <AiOutlineBarChart />,
       },
-      {
-        name: 'pie',
-        icon: <FiPieChart />,
-      },
-      {
-        name: 'finanza',
-        icon: <RiStockLine />,
-      },
-      {
-        name: 'mappa-colori',
-        icon: <BsBarChart />,
-      },
-      {
-        name: 'piramide',
-        icon: <GiLouvrePyramid />,
-      },
-      {
-        name: 'stacked',
-        icon: <AiOutlineBarChart />,
-      },
+      
+      
     ],
   },
 ];
@@ -1485,7 +1457,7 @@ export const employeesData = [
   {
     EmployeeID: 1,
     Name: 'Nancy Davolio',
-    Title: 'Sales Representative',
+    Title: 'Vendite',
     HireDate: '01/02/2021',
     Country: 'USA',
     ReportsTo: 'Carson',
@@ -1555,7 +1527,7 @@ export const employeesData = [
   {
     EmployeeID: 1,
     Name: 'Nancy Davolio',
-    Title: 'Sales Representative',
+    Title: 'Vendite',
     HireDate: '01/02/2021',
     Country: 'USA',
     ReportsTo: 'Carson',
@@ -1626,7 +1598,7 @@ export const employeesData = [
   {
     EmployeeID: 1,
     Name: 'Nancy Davolio',
-    Title: 'Sales Representative',
+    Title: 'Vendite',
     HireDate: '01/02/2021',
     Country: 'USA',
     ReportsTo: 'Carson',
@@ -1696,7 +1668,7 @@ export const employeesData = [
   {
     EmployeeID: 1,
     Name: 'Nancy Davolio',
-    Title: 'Sales Representative',
+    Title: 'Vendite',
     HireDate: '01/02/2021',
     Country: 'USA',
     ReportsTo: 'Carson',
@@ -1767,7 +1739,7 @@ export const employeesData = [
   {
     EmployeeID: 1,
     Name: 'Nancy Davolio',
-    Title: 'Sales Representative',
+    Title: 'Vendite',
     HireDate: '01/02/2021',
     Country: 'USA',
     ReportsTo: 'Carson',
@@ -1838,7 +1810,7 @@ export const employeesData = [
   {
     EmployeeID: 1,
     Name: 'Nancy Davolio',
-    Title: 'Sales Representative',
+    Title: 'Vendite',
     HireDate: '01/02/2021',
     Country: 'USA',
     ReportsTo: 'Carson',
@@ -1909,7 +1881,7 @@ export const employeesData = [
   {
     EmployeeID: 1,
     Name: 'Nancy Davolio',
-    Title: 'Sales Representative',
+    Title: 'Vendite',
     HireDate: '01/02/2021',
     Country: 'USA',
     ReportsTo: 'Carson',
@@ -1980,7 +1952,7 @@ export const employeesData = [
   {
     EmployeeID: 1,
     Name: 'Nancy Davolio',
-    Title: 'Sales Representative',
+    Title: 'Vendite',
     HireDate: '01/02/2021',
     Country: 'USA',
     ReportsTo: 'Carson',
@@ -2051,7 +2023,7 @@ export const employeesData = [
   {
     EmployeeID: 1,
     Name: 'Nancy Davolio',
-    Title: 'Sales Representative',
+    Title: 'Vendite',
     HireDate: '01/02/2021',
     Country: 'USA',
     ReportsTo: 'Carson',
@@ -2846,47 +2818,47 @@ export const ordersData = [
 export const scheduleData = [
   {
     Id: 1,
-    Subject: 'Explosion of Betelgeuse Star',
-    Location: 'Space Center USA',
+    Subject: 'Esposizione Star',
+    Location: 'Milano',
     StartTime: '2023-05-10T04:00:00.000Z',
     EndTime: '2023-05-10T05:30:00.000Z',
     CategoryColor: '#1aaa55',
   },
   {
     Id: 2,
-    Subject: 'Thule Air Crash Report',
-    Location: 'Newyork City',
+    Subject: 'Tartaruge Costa Rica',
+    Location: 'Costa Rica',
     StartTime: '2023-05-11T06:30:00.000Z',
     EndTime: '2023-05-11T08:30:00.000Z',
     CategoryColor: '#357cd2',
   },
   {
     Id: 3,
-    Subject: 'Blue Moon Eclipse',
-    Location: 'Space Center USA',
+    Subject: 'Eclipse Lunare',
+    Location: 'Milano',
     StartTime: '2023-05-12T04:00:00.000Z',
     EndTime: '2023-05-12T05:30:00.000Z',
     CategoryColor: '#7fa900',
   },
   {
     Id: 4,
-    Subject: 'Meteor Showers in 2023',
-    Location: 'Space Center USA',
+    Subject: 'Meteoriti Show',
+    Location: 'Milano',
     StartTime: '2023-05-13T07:30:00.000Z',
     EndTime: '2023-05-13T09:00:00.000Z',
     CategoryColor: '#ea7a57',
   },
   {
     Id: 5,
-    Subject: 'Milky Way as Melting pot',
-    Location: 'Space Center USA',
+    Subject: 'Via Latea',
+    Location: 'Milano',
     StartTime: '2023-05-14T06:30:00.000Z',
     EndTime: '2023-05-14T08:30:00.000Z',
     CategoryColor: '#00bdae',
   },
   {
     Id: 6,
-    Subject: 'Mysteries of Bermuda Triangle',
+    Subject: 'Mistero del Triangle of Bermuda',
     Location: 'Bermuda',
     StartTime: '2023-05-14T04:00:00.000Z',
     EndTime: '2023-05-14T05:30:00.000Z',
@@ -2903,7 +2875,7 @@ export const scheduleData = [
   {
     Id: 8,
     Subject: 'Life on Mars',
-    Location: 'Space Center USA',
+    Location: 'Milano',
     StartTime: '2023-05-16T03:30:00.000Z',
     EndTime: '2023-05-16T04:30:00.000Z',
     CategoryColor: '#357cd2',
@@ -2911,7 +2883,7 @@ export const scheduleData = [
   {
     Id: 9,
     Subject: 'Alien Civilization',
-    Location: 'Space Center USA',
+    Location: 'Milano',
     StartTime: '2023-05-18T05:30:00.000Z',
     EndTime: '2023-05-18T07:30:00.000Z',
     CategoryColor: '#7fa900',
@@ -2943,7 +2915,7 @@ export const scheduleData = [
   {
     Id: 13,
     Subject: 'Myths of Andromeda Galaxy',
-    Location: 'Space Center USA',
+    Location: 'Milano',
     StartTime: '2023-05-06T05:00:00.000Z',
     EndTime: '2023-05-06T07:00:00.000Z',
     CategoryColor: '#1aaa55',
@@ -2951,7 +2923,7 @@ export const scheduleData = [
   {
     Id: 14,
     Subject: 'Aliens vs Humans',
-    Location: 'Research Center of USA',
+    Location: 'ResearMilano',
     StartTime: '2023-05-05T04:30:00.000Z',
     EndTime: '2023-05-05T06:00:00.000Z',
     CategoryColor: '#357cd2',
@@ -2975,7 +2947,7 @@ export const scheduleData = [
   {
     Id: 17,
     Subject: 'The Cycle of Seasons',
-    Location: 'Research Center of USA',
+    Location: 'ResearMilano',
     StartTime: '2023-05-11T00:00:00.000Z',
     EndTime: '2023-05-11T02:00:00.000Z',
     CategoryColor: '#00bdae',
@@ -2983,7 +2955,7 @@ export const scheduleData = [
   {
     Id: 18,
     Subject: 'Space Galaxies and Planets',
-    Location: 'Space Center USA',
+    Location: 'Milano',
     StartTime: '2023-05-11T11:30:00.000Z',
     EndTime: '2023-05-11T13:00:00.000Z',
     CategoryColor: '#f57f17',
@@ -2999,7 +2971,7 @@ export const scheduleData = [
   {
     Id: 20,
     Subject: 'Alien Civilization',
-    Location: 'Space Center USA',
+    Location: 'Milano',
     StartTime: '2023-05-14T10:30:00.000Z',
     EndTime: '2023-05-14T12:30:00.000Z',
     CategoryColor: '#ea7a57',
@@ -3007,7 +2979,7 @@ export const scheduleData = [
   {
     Id: 21,
     Subject: 'Alien Civilization',
-    Location: 'Space Center USA',
+    Location: 'Milano',
     StartTime: '2023-05-10T08:30:00.000Z',
     EndTime: '2023-05-10T10:30:00.000Z',
     CategoryColor: '#ea7a57',
@@ -3015,7 +2987,7 @@ export const scheduleData = [
   {
     Id: 22,
     Subject: 'The Cycle of Seasons',
-    Location: 'Research Center of USA',
+    Location: 'ResearMilano',
     StartTime: '2023-05-12T09:00:00.000Z',
     EndTime: '2023-05-12T10:30:00.000Z',
     CategoryColor: '#00bdae',
@@ -3155,22 +3127,22 @@ export const ecomPieChartData = [
 
 export const stackedChartData = [
   [
-    { x: 'Jan', y: 111.1 },
+    { x: 'Gen', y: 111.1 },
     { x: 'Feb', y: 127.3 },
     { x: 'Mar', y: 143.4 },
     { x: 'Apr', y: 159.9 },
-    { x: 'May', y: 159.9 },
-    { x: 'Jun', y: 159.9 },
-    { x: 'July', y: 159.9 },
+    { x: 'Mag', y: 159.9 },
+    { x: 'Giu', y: 159.9 },
+    { x: 'Lul', y: 159.9 },
   ],
   [
-    { x: 'Jan', y: 111.1 },
+    { x: 'Gen', y: 111.1 },
     { x: 'Feb', y: 127.3 },
     { x: 'Mar', y: 143.4 },
     { x: 'Apr', y: 159.9 },
-    { x: 'May', y: 159.9 },
-    { x: 'Jun', y: 159.9 },
-    { x: 'July', y: 159.9 },
+    { x: 'Mag', y: 159.9 },
+    { x: 'Giu', y: 159.9 },
+    { x: 'Lul', y: 159.9 },
   ],
 ];
 
@@ -3188,7 +3160,7 @@ export const stackedCustomSeries = [
   { dataSource: stackedChartData[1],
     xName: 'x',
     yName: 'y',
-    name: 'Expense',
+    name: 'Spese',
     type: 'StackingColumn',
     background: 'red',
 
